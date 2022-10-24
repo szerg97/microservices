@@ -1,0 +1,14 @@
+[
+  {
+    "namespace": "com.szalai.microservices.common.schema",
+    "name": "Box",
+    "type": "record",
+    "fields": [
+      {"name": "id","type": "string"},
+      {"name": "label","type": "string"},
+      {"name": "sizeX","type": "double"},
+      {"name": "sizeY","type": "double"},
+      {"name": "sizeZ","type": "double"}
+    ]
+  }
+]

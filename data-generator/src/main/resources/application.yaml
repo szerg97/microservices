@@ -1,0 +1,45 @@
+server:
+  port: 7081
+
+topic:
+  name: 'com.szalai.microservices.topic.v1'
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: 'sa'
+    password: 'password'
+    url: 'jdbc:h2:mem:testdb'
+
+  h2:
+    console:
+      enabled: true
+
+  kafka:
+    bootstrap-servers: 'localhost:9092'
+
+    producer:
+      key-serializer: 'org.apache.kafka.common.serialization.StringSerializer'
+      value-serializer: 'io.confluent.kafka.serializers.KafkaAvroSerializer'
+      properties:
+        schema:
+          registry:
+            url: 'http://localhost:8081'
+
+    consumer:
+      key-deserializer: 'org.apache.kafka.common.serialization.StringDeserializer'
+      value-deserializer: 'io.confluent.kafka.serializers.KafkaAvroDeserializer'
+      properties:
+        schema:
+          registry:
+            url: 'http://localhost:8081'
+        specific:
+          avro:
+            reader: true
+      group-id: 'com.szalai.microservices.group.v1'
+      auto-offset-reset: earliest
+
+    properties:
+      auto:
+        register:
+          schemas: true
