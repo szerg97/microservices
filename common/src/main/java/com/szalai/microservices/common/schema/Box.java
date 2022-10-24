@@ -5,10 +5,10 @@
  */
 package com.szalai.microservices.common.schema;
 
-import org.apache.avro.specific.SpecificData;
-import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
+import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.SchemaStore;
+import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
@@ -51,8 +51,8 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
     return DECODER.decode(b);
   }
 
-  @Deprecated public java.lang.CharSequence id;
-  @Deprecated public java.lang.CharSequence label;
+  @Deprecated public CharSequence id;
+  @Deprecated public CharSequence label;
   @Deprecated public double sizeX;
   @Deprecated public double sizeY;
   @Deprecated public double sizeZ;
@@ -72,7 +72,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param sizeY The new value for sizeY
    * @param sizeZ The new value for sizeZ
    */
-  public Box(java.lang.CharSequence id, java.lang.CharSequence label, java.lang.Double sizeX, java.lang.Double sizeY, java.lang.Double sizeZ) {
+  public Box(CharSequence id, CharSequence label, Double sizeX, Double sizeY, Double sizeZ) {
     this.id = id;
     this.label = label;
     this.sizeX = sizeX;
@@ -82,7 +82,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
-  public java.lang.Object get(int field$) {
+  public Object get(int field$) {
     switch (field$) {
     case 0: return id;
     case 1: return label;
@@ -95,13 +95,13 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
 
   // Used by DatumReader.  Applications should not call.
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, java.lang.Object value$) {
+  public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: id = (java.lang.CharSequence)value$; break;
-    case 1: label = (java.lang.CharSequence)value$; break;
-    case 2: sizeX = (java.lang.Double)value$; break;
-    case 3: sizeY = (java.lang.Double)value$; break;
-    case 4: sizeZ = (java.lang.Double)value$; break;
+    case 0: id = (CharSequence)value$; break;
+    case 1: label = (CharSequence)value$; break;
+    case 2: sizeX = (Double)value$; break;
+    case 3: sizeY = (Double)value$; break;
+    case 4: sizeZ = (Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -110,7 +110,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Gets the value of the 'id' field.
    * @return The value of the 'id' field.
    */
-  public java.lang.CharSequence getId() {
+  public CharSequence getId() {
     return id;
   }
 
@@ -118,7 +118,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Sets the value of the 'id' field.
    * @param value the value to set.
    */
-  public void setId(java.lang.CharSequence value) {
+  public void setId(CharSequence value) {
     this.id = value;
   }
 
@@ -126,7 +126,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Gets the value of the 'label' field.
    * @return The value of the 'label' field.
    */
-  public java.lang.CharSequence getLabel() {
+  public CharSequence getLabel() {
     return label;
   }
 
@@ -134,7 +134,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Sets the value of the 'label' field.
    * @param value the value to set.
    */
-  public void setLabel(java.lang.CharSequence value) {
+  public void setLabel(CharSequence value) {
     this.label = value;
   }
 
@@ -142,7 +142,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Gets the value of the 'sizeX' field.
    * @return The value of the 'sizeX' field.
    */
-  public java.lang.Double getSizeX() {
+  public Double getSizeX() {
     return sizeX;
   }
 
@@ -150,7 +150,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Sets the value of the 'sizeX' field.
    * @param value the value to set.
    */
-  public void setSizeX(java.lang.Double value) {
+  public void setSizeX(Double value) {
     this.sizeX = value;
   }
 
@@ -158,7 +158,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Gets the value of the 'sizeY' field.
    * @return The value of the 'sizeY' field.
    */
-  public java.lang.Double getSizeY() {
+  public Double getSizeY() {
     return sizeY;
   }
 
@@ -166,7 +166,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Sets the value of the 'sizeY' field.
    * @param value the value to set.
    */
-  public void setSizeY(java.lang.Double value) {
+  public void setSizeY(Double value) {
     this.sizeY = value;
   }
 
@@ -174,7 +174,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Gets the value of the 'sizeZ' field.
    * @return The value of the 'sizeZ' field.
    */
-  public java.lang.Double getSizeZ() {
+  public Double getSizeZ() {
     return sizeZ;
   }
 
@@ -182,7 +182,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Sets the value of the 'sizeZ' field.
    * @param value the value to set.
    */
-  public void setSizeZ(java.lang.Double value) {
+  public void setSizeZ(Double value) {
     this.sizeZ = value;
   }
 
@@ -190,8 +190,8 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * Creates a new Box RecordBuilder.
    * @return A new Box RecordBuilder
    */
-  public static com.szalai.microservices.common.schema.Box.Builder newBuilder() {
-    return new com.szalai.microservices.common.schema.Box.Builder();
+  public static Builder newBuilder() {
+    return new Builder();
   }
 
   /**
@@ -199,8 +199,8 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param other The existing builder to copy.
    * @return A new Box RecordBuilder
    */
-  public static com.szalai.microservices.common.schema.Box.Builder newBuilder(com.szalai.microservices.common.schema.Box.Builder other) {
-    return new com.szalai.microservices.common.schema.Box.Builder(other);
+  public static Builder newBuilder(Builder other) {
+    return new Builder(other);
   }
 
   /**
@@ -208,8 +208,8 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param other The existing instance to copy.
    * @return A new Box RecordBuilder
    */
-  public static com.szalai.microservices.common.schema.Box.Builder newBuilder(com.szalai.microservices.common.schema.Box other) {
-    return new com.szalai.microservices.common.schema.Box.Builder(other);
+  public static Builder newBuilder(Box other) {
+    return new Builder(other);
   }
 
   /**
@@ -218,8 +218,8 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Box>
     implements org.apache.avro.data.RecordBuilder<Box> {
 
-    private java.lang.CharSequence id;
-    private java.lang.CharSequence label;
+    private CharSequence id;
+    private CharSequence label;
     private double sizeX;
     private double sizeY;
     private double sizeZ;
@@ -233,7 +233,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.szalai.microservices.common.schema.Box.Builder other) {
+    private Builder(Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -261,7 +261,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
      * Creates a Builder by copying an existing Box instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.szalai.microservices.common.schema.Box other) {
+    private Builder(Box other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -289,7 +289,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Gets the value of the 'id' field.
       * @return The value.
       */
-    public java.lang.CharSequence getId() {
+    public CharSequence getId() {
       return id;
     }
 
@@ -298,7 +298,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder setId(java.lang.CharSequence value) {
+    public Builder setId(CharSequence value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -318,7 +318,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder clearId() {
+    public Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -328,7 +328,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Gets the value of the 'label' field.
       * @return The value.
       */
-    public java.lang.CharSequence getLabel() {
+    public CharSequence getLabel() {
       return label;
     }
 
@@ -337,7 +337,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * @param value The value of 'label'.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder setLabel(java.lang.CharSequence value) {
+    public Builder setLabel(CharSequence value) {
       validate(fields()[1], value);
       this.label = value;
       fieldSetFlags()[1] = true;
@@ -357,7 +357,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Clears the value of the 'label' field.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder clearLabel() {
+    public Builder clearLabel() {
       label = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -367,7 +367,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Gets the value of the 'sizeX' field.
       * @return The value.
       */
-    public java.lang.Double getSizeX() {
+    public Double getSizeX() {
       return sizeX;
     }
 
@@ -376,7 +376,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * @param value The value of 'sizeX'.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder setSizeX(double value) {
+    public Builder setSizeX(double value) {
       validate(fields()[2], value);
       this.sizeX = value;
       fieldSetFlags()[2] = true;
@@ -396,7 +396,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Clears the value of the 'sizeX' field.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder clearSizeX() {
+    public Builder clearSizeX() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -405,7 +405,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Gets the value of the 'sizeY' field.
       * @return The value.
       */
-    public java.lang.Double getSizeY() {
+    public Double getSizeY() {
       return sizeY;
     }
 
@@ -414,7 +414,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * @param value The value of 'sizeY'.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder setSizeY(double value) {
+    public Builder setSizeY(double value) {
       validate(fields()[3], value);
       this.sizeY = value;
       fieldSetFlags()[3] = true;
@@ -434,7 +434,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Clears the value of the 'sizeY' field.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder clearSizeY() {
+    public Builder clearSizeY() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -443,7 +443,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Gets the value of the 'sizeZ' field.
       * @return The value.
       */
-    public java.lang.Double getSizeZ() {
+    public Double getSizeZ() {
       return sizeZ;
     }
 
@@ -452,7 +452,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * @param value The value of 'sizeZ'.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder setSizeZ(double value) {
+    public Builder setSizeZ(double value) {
       validate(fields()[4], value);
       this.sizeZ = value;
       fieldSetFlags()[4] = true;
@@ -472,7 +472,7 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
       * Clears the value of the 'sizeZ' field.
       * @return This builder.
       */
-    public com.szalai.microservices.common.schema.Box.Builder clearSizeZ() {
+    public Builder clearSizeZ() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -482,13 +482,13 @@ public class Box extends org.apache.avro.specific.SpecificRecordBase implements 
     public Box build() {
       try {
         Box record = new Box();
-        record.id = fieldSetFlags()[0] ? this.id : (java.lang.CharSequence) defaultValue(fields()[0]);
-        record.label = fieldSetFlags()[1] ? this.label : (java.lang.CharSequence) defaultValue(fields()[1]);
-        record.sizeX = fieldSetFlags()[2] ? this.sizeX : (java.lang.Double) defaultValue(fields()[2]);
-        record.sizeY = fieldSetFlags()[3] ? this.sizeY : (java.lang.Double) defaultValue(fields()[3]);
-        record.sizeZ = fieldSetFlags()[4] ? this.sizeZ : (java.lang.Double) defaultValue(fields()[4]);
+        record.id = fieldSetFlags()[0] ? this.id : (CharSequence) defaultValue(fields()[0]);
+        record.label = fieldSetFlags()[1] ? this.label : (CharSequence) defaultValue(fields()[1]);
+        record.sizeX = fieldSetFlags()[2] ? this.sizeX : (Double) defaultValue(fields()[2]);
+        record.sizeY = fieldSetFlags()[3] ? this.sizeY : (Double) defaultValue(fields()[3]);
+        record.sizeZ = fieldSetFlags()[4] ? this.sizeZ : (Double) defaultValue(fields()[4]);
         return record;
-      } catch (java.lang.Exception e) {
+      } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }

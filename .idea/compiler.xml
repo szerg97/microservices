@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="data-writer" />
-        <module name="data-query" />
         <module name="data-generator" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-query" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

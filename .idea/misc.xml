@@ -7,7 +7,7 @@
         <option value="$PROJECT_DIR$/data-generator/pom.xml" />
         <option value="$PROJECT_DIR$/data-writer/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/data-query/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
